@@ -130,7 +130,7 @@ def run_pipeline(
             try:
                 # Запрос к Qwen 2.5 72B Instruct
                 response = client.chat.completions.create(
-                    model="qwen/qwen-2.5-72b-instruct",
+                    model="qwen/qwen-2.5-72b-instruct:free",
                     temperature=0.0,
                     response_format={"type": "json_object"},
                     messages=[
